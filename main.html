@@ -9,15 +9,22 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        form {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 
 <body bgcolor="#000000" text="#FFFFFF">
-    <form>
-        <input type="text">
-        <input type="submit">
+    <form action="/action_page.php" target="_self" method="post">
+        <input type="text" id="exec" name="exec" pattern="[A-Za-z]{8}" placeholder="Password">
+        <input type="submit" value="Submit">
     </form>
-
 </body>
 
 </html>
